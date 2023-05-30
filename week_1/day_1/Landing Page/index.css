@@ -1,0 +1,55 @@
+body{
+    background-color: blue;
+}
+
+.class1 {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.class1 img{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 25%;
+}
+h1{
+    text-align: center;
+    color: rgb(91, 91, 229);
+}
+
+h3{
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border-color: aquamarine;
+}
+
+.aboutMe, .text{
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border{
+    background-color: rgb(91, 91, 229);
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border > .text{
+    width: 100%;
+}
+
+.interactive {
+    text-align: center;
+    color: white;
+}
