@@ -2,8 +2,10 @@ let guess = document.getElementById('guess');
 let expl = document.getElementById('explanation');
 let correct = document.getElementById("right-wrong");
 let hint = document.getElementById('second-hint');
+let nextButton1 = document.getElementById('next-button');
 let index = 0;
 let flag = false;
+let correctFlag = false;
 
 const movies = [
     {title: 'Harry Potter', explanation: 'This movie is about a dude with a stick...', hint: 'It\'s Magic'},
@@ -39,6 +41,8 @@ expl.innerHTML = movieExplanation;
         expl.innerHTML = movieExplanation;
         hint.innerHTML = '';
         correct.innerHTML='';
+        correctFlag = false;
+        nextButton1.innerHTML = "This button does nothing"
     }
 }
 
@@ -53,7 +57,9 @@ function submitGuess(){
 function guessCheck(){
     if(guess.value == movieAnswer){
         correct.innerHTML = "Correct!";
-        reset();
+        explanation.innerHTML = '';
+        correctFlag = true;
+        nextButton1.innerHTML = "Congrats! Click this button for the next movie."
     }
     else{
         correct.innerHTML = "Incorrect! Try again.";
@@ -71,4 +77,8 @@ function showHint(){
     }
 }
 
-
+function nextButton(){
+    if(correctFlag){
+        reset();
+    }
+}

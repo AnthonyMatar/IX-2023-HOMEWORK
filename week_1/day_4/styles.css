@@ -1,4 +1,8 @@
-.hello{
-    background-color:rgba(128, 94, 94, 0.188);
+.container-sm{
     width: 500px;
+    background-image: linear-gradient(to right, red , yellow);
+}
+
+.card{
+    background-color:rgb(216, 215, 215);
 }
