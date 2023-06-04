@@ -11,16 +11,16 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylsheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class = 'bg-secondary hello'>
     <div class="container">
-      <div class="card text-center mt-3">
+      <div class="card text-center">
         <h1>To-Do List</h1>
         <h6 class="text-secondary">Keep track of your tasks here!</h6>
         <hr />
         <form id = "form">
-          <div class="mb-3">
+          <div class="form-row align-items-center">
             <input
               id="task-input"
               type="text"
@@ -28,11 +28,9 @@
               placeholder="Type in your task here"
             />
           </div>
-          <div class="mt-4">
-            <button
-              class="btn btn-outline-secondary mt-2 btn-block mb-4"
-              type="submit"
-            >
+
+          <div class="mt-2 col-auto my-1">
+            <button class="btn btn-outline-secondary mb-4" type="submit">
               Add task
             </button>
           </div>
@@ -42,9 +40,9 @@
           <thead>
             <tr>
               <th>Task</th>
-              <th>Due Date</th>
               <th>Complete</th>
-              <th>Edit/Delete</th>
+              <th>Edit</th>
+              <th>Delete</th>
             </tr>
           </thead>
           <tbody id="table-body"></tbody>

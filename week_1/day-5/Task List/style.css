@@ -1,0 +1,5 @@
+.container{
+    padding: 15px;
+    width: 500px;
+    background-image: linear-gradient(to right, blue , purple);
+}
