@@ -1,5 +1,9 @@
+.hello{
+    background-image: linear-gradient(to right, grey, black);
+}
+
 .container{
     padding: 15px;
     width: 500px;
-    background-image: linear-gradient(to right, blue , purple);
+    background-image: linear-gradient(to left, red , black);
 }
