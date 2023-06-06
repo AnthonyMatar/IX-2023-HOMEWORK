@@ -11,7 +11,11 @@ export default function PokemonTable(props) {
         </thead>
         <tbody id="table-body">
           {props.pokemons.map((pokemon) => {
-            return <tr key={pokemon.name}>{pokemon.name}</tr>
+            return (
+              <tr key={pokemon.name}>
+                <td>{pokemon.name}</td>
+              </tr>
+            );
           })}
         </tbody>
       </table>
